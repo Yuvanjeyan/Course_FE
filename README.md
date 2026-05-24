@@ -1,8 +1,90 @@
-# Getting Started with Create React App
+# Learning Platform Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the React frontend for the Learning Platform application. It provides a polished UI for students, teachers, and admins with course browsing, video playback, course creation, quizzes, enrollment tracking, and certificate features.
+
+## Features
+
+- Responsive dashboard for students, teachers, and admins
+- Course creation and editing with video upload support
+- Student course browsing, enrollment, and details pages
+- Secure JWT authentication with role-based protected routes
+- Video player for uploaded course material
+- Quiz center, certificate generator, and attendance module placeholders
+- Tailwind CSS styling with a modern dashboard layout
+
+## Setup
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env` file in `client/` if needed:
+
+   ```bash
+   REACT_APP_BACKEND_URL=http://localhost:5000
+   ```
+
+3. Start the client app:
+
+   ```bash
+   npm start
+   ```
+
+4. Open the app in your browser at:
+
+   ```text
+   http://localhost:3000
+   ```
+
+## Important Notes
+
+- The frontend expects the backend API to be available at `REACT_APP_BACKEND_URL`.
+- If `REACT_APP_BACKEND_URL` is not set, the client defaults to `http://localhost:5000`.
+- File upload fields use `multipart/form-data` so video uploads work with the backend.
 
 ## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Starts the frontend in development mode.
+
+### `npm test`
+
+Runs the test runner.
+
+### `npm run build`
+
+Builds the app for production into the `build` folder.
+
+## Dependencies
+
+Key frontend libraries include:
+
+- React
+- React Router DOM
+- Redux Toolkit
+- Axios
+- Tailwind CSS
+- React Toastify
+
+## Deployment
+
+Build the production bundle with:
+
+```bash
+npm run build
+```
+
+Then serve the contents of the `build/` folder with any static hosting provider.
+
+### Notes
+
+- This client is intended to work with the backend server running at `http://localhost:5000`.
+- If you use a different backend URL, update `REACT_APP_BACKEND_URL` in `.env`.
 
 In the project directory, you can run:
 

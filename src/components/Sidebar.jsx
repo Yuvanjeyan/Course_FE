@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
